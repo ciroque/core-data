@@ -24,7 +24,7 @@ object ApplicationBuild extends Build {
     },
     licenses += ("MIT" -> url("http://opensource.org/licenses/MIT")),
     homepage := Some(url("http://ciroque-x.net/")),
-    scmInfo := Some(ScmInfo(url("http://ciroque-x.net"), "git://github.com/ciroque/securesocial-mongodb-serservice.git")),
+    scmInfo := Some(ScmInfo(url("http://ciroque-x.net"), "https://github.com/ciroque/core-data.git")),
 
     // Maven central wants some extra metadata to keep things 'clean'.
     pomExtra := (
