@@ -28,6 +28,10 @@ trait DataStoreResult {
   val message: String
 }
 
+object DataStoreResult {
+  val SUCCESS_MESSAGE = "The operation completed successfully"
+}
+
 case class DataStoreSuccessResult() extends DataStoreResult {
   val message = DataStoreResult.SUCCESS_MESSAGE
 }
@@ -40,6 +44,3 @@ case class DataStoreFailureResult(code: Int, msg: String, throwable: Option[Thro
   val message = msg
 }
 
-object DataStoreResult {
-  val SUCCESS_MESSAGE = "The operation completed successfully"
-}
